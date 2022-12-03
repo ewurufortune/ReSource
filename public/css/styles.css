@@ -1,0 +1,130 @@
+
+body {
+  background-color: #7C83FD;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.resource-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #6930C3;
+}
+.title{
+  border: none;
+  border-bottom: 2px solid #6930C3;
+
+}
+.title:focus{
+  
+  border-radius: 2px solid #6930C3;
+
+}
+.headline{
+  border: 2px solid #6930C3;
+  color:#80FFDB;
+
+  margin-bottom: 20px;
+  width: 50%;
+  height: 35px;
+  border-radius: 3%;
+  margin-left: 25%;
+}
+.tagline{
+  width: 40%;
+  margin-left: 30%;
+}
+.link{
+  width: 10%;
+  height:50px
+}
+.jumbotron{
+  background-color: #ECFCFF;
+}
+
+.feed{
+  width: 80%;
+  background-color: #ECFCFF;
+  margin-left: 10%;
+}
+#collapseExample{
+  background-color: #7C83FD;
+}
+.head-button{
+  width: 100%;
+}
+.details{
+  background-color: #ECFCFF;
+
+}
+.vote{
+  display: inline-block;
+  margin-top: 1%;
+  margin-right: 80%;
+  opacity: 0.5;
+ 
+}
+
+/* Home */
+.button-group{
+ display: flex;
+  position: sticky;
+top: 5px;
+}
+.hero{
+  background-color: #7C83FD;
+}
+/* ACCORDION */
+/*  */
+.arrow-btns{
+  display: inline-block;
+  margin-top: 2rem;
+}
+.up-btn{
+  margin-right: 1rem;
+}
+.twitter-icon{
+  margin-right: 30px;
+}
+
+/* Media Queries */
+@media (max-width:900px){
+  body{
+    text-align: center;
+  }
+.display-3{
+font-size: 2rem;
+}
+
+.button-group{
+  display: flex;
+   position: relative;
+ top: 5px;
+ }
+.socials{
+  display: flex;
+  margin-left: 80px;
+}
+.link{
+  margin-top: 5px;
+  width: 30%;
+}
+.feed{
+  margin-left: 0;
+width: 100%;
+}
+.head-button{
+  width: 100%;
+  margin: 0;
+  align-items: center;
+}
+}
+
+
+
+
+

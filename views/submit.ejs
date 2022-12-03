@@ -1,0 +1,50 @@
+<%- include('partials/header') %>
+
+<div class="container">
+  <div class="jumbotron centered">
+    <i class="fa fa-duotone fa-money-bill-wheat fa-6x"></i>
+    <h1 class="display-3">Resources</h1>
+    <p class="resource-text">Share The Resources That Helped You Grow!</p>
+
+    <form action="/submit" method="POST">
+
+      <div class="form-group">
+       <!-- Headline & Tagline -->
+      <label for="headline">Headline</label>
+        <input type="text" class=" headline form-control text-center"minlength="3" maxlength="100" name="headline" placeholder=" eg. Top 5 cookbooks."><br/>
+        <label for="tagline">Tagline</label>
+        <input type="text" class=" tagline form-control text-center" maxlength="100" name="tagline" placeholder="eg. cookbooks are important!"><br/><br/>
+       <!-- one -->
+       <label for="item1">Item One</label>
+        <input type="text" class=" title form-control text-center" maxlength="100" name="number1" placeholder="Title."><br/>
+        <input type="text" class=" about form-control text-center"maxlength="100"  name="number1tag" placeholder="What its about.">
+        <input type="text" class="link form-control text-center" name="number1link" placeholder="source"><br/><br/>
+<!-- 2 -->
+<label for="item2">Item Two</label>
+<input type="text" class="title form-control text-center" maxlength="100" name="number2" placeholder="Title."><br/>
+<input type="text" class=" about form-control text-center" maxlength="100" name="number2tag" placeholder="What it's about.">
+<input type="text" class="link form-control text-center" name="number2link" placeholder="Share an experience here."><br/><br/>
+<!-- 3 -->
+<label for="item3">Item Three</label>
+<input type="text" class=" title form-control text-center" maxlength="100" name="number3" placeholder="Title."><br/>
+<input type="text" class=" about form-control text-center" maxlength="100" name="number3tag" placeholder="What it's about.">
+<input type="text" class="link form-control text-center" maxlength="100" name="number3link" placeholder="Paste the link here."><br/><br/>
+<!-- 4 -->
+<label for="item4">Item Four</label>
+<input type="text" class="title form-control text-center" maxlength="100" name="number4" placeholder="Title."><br/>
+<input type="text" class=" about form-control text-center" maxlength="100" name="number4tag" placeholder="What it's about.">
+<input type="text" class="link form-control text-center" name="number4link" placeholder="Paste link here."><br/><br/>
+<!-- 5 -->
+<label for="item5">Item Five</label>
+<input type="text" class=" title form-control text-center" maxlength="100" name="number5" placeholder="Title."><br/>
+<input type="text" class=" about form-control text-center"maxlength="100"  name="number5tag" placeholder="What it's about.">
+<input type="text" class="link form-control text-center" name="number45ink" placeholder="Paste the link here."><br/><br/>
+      </div>
+      <a class="btn btn-light btn-lg" href="/resources" role="button">Back</a>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+
+
+  </div>
+</div>
+<%- include('partials/footer') %>

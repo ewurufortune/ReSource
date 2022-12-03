@@ -1,0 +1,89 @@
+<%- include('partials/header') %>
+<div class="button-group flex-wrap btn-group btn-group-lg" data-toggle="buttons">
+  <a href="/resources" class="btn btn-primary " aria-current="page"><i class="fa fa-newspaper-o"></i> Feed</a>
+  <a href="/mysources" class="btn btn-primary active" > <i class="fa fa-user"></i> My Resources</a>
+  <a href="/submit" class="btn btn-primary" ><i class="fa fa-signs-post"></i> Post</a>
+  <a href="/logout" class="btn btn-primary" ><i class="fa fa-sign-out"></i> Log Out</a>
+ </div>
+<div class="jumbotron text-center">
+  <div class="container">
+    <i class="fa fa-duotone fa-money-bill-wheat fa-6x"></i>
+    <h1 class="display-3">My Resources</h1>
+  </div>
+  
+  <%console.log('foundUser')%>
+  <%console.log(user)%>
+  <%console.log('Enduser')%>
+  <%user.storyRoadMap.forEach(item=>{%>
+    <a class=" head-button btn btn-primary active" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+  
+      <h2><%=item.headline%></h2>
+
+        <h3><%=item.tagline%></h3>
+        <span> by <%=user.username%></span>
+</a>
+
+
+<div class=" pannel-collapse collapse" id="collapseExample">
+<div class="card details card-body">
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <h4><%=item.number1%></h4>
+      </div><div class="col">
+        <h5><%=item.number1tag%></h5>
+      </div><div class="col">
+        <a href="<%=item.number1link%>"><%=item.number1link%></a>
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4><%=item.number2%></h4>
+    </div><div class="col">
+      <h5><%=item.number2tag%></h5>
+    
+    </div><div class="col">
+      <a href="<%=item.number1link%>"><%=item.number2link%></a>
+    
+    </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4><%=item.number3%></h4>
+    </div><div class="col">
+      <h5><%=item.number3tag%></h5>
+    </div><div class="col">
+      <a href="<%=item.number1link%>"><%=item.number3link%></a>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h4><%=item.number4%></h4>
+    </div><div class="col">
+      <h5><%=item.number4tag%></h5>
+    </div><div class="col">
+      <a href="<%=item.number1link%>"><%=item.number4link%></a>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-5">
+        <h4><%=item.number5%></h4>
+    </div><div class="col-5">
+      <h5><%=item.number5tag%></h5>
+    </div><div class="col-2">
+      <a href="<%=item.number1link%>"><%=item.number5link%></a>
+    
+    </div>
+    </div>
+     </div>
+</div>
+</div>
+
+
+ <% })%>
+</div>
+    
+    
+<%- include('partials/footer') %>

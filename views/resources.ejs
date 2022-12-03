@@ -1,0 +1,120 @@
+<%- include('partials/header') %>
+<div class="top-container">
+  <div class="button-group flex-wrap btn-group btn-group-lg" data-toggle="buttons">
+    <a href="/resources" class="btn btn-primary active" aria-current="page"><i class="fa fa-newspaper-o"></i> Feed</a>
+    <a href="/mysources" class="btn btn-primary " > <i class="fa fa-user"></i> My Resources</a>
+    <a href="/submit" class="btn btn-primary" ><i class="fa fa-signs-post"></i> Post</a>
+    <a href="/logout" class="btn btn-primary" ><i class="fa fa-sign-out"></i> Log Out</a>
+   </div>
+  <div class="jumbotron text-center">
+    <div class="container">
+      <i class="fa fa-duotone fa-money-bill-wheat fa-6x"></i>
+      <h1 class="display-3">View Popular Resources</h1>
+  
+    </div>
+  </div>
+</div>
+
+
+   
+    <% usersWithResources.forEach(function(user){ %>
+     <%console.log(user)%>
+    <% user.storyRoadMap.forEach(function(info,i){ %>
+      <%console.log(i)%>
+      
+        <div class="jumbotron feed text-center">
+          <div class="container">
+  
+    <a class=" head-button btn btn-primary active" data-bs-toggle="collapse" href="#collapseExample<%=i%>" role="button" aria-expanded="false" aria-controls="collapseExample<%=i%>">
+    
+          <h2><%=info.headline%></h2>
+  
+            <h3><%=info.tagline%></h3>
+            <span> by <%=user.username%></span>
+    </a>
+  
+  
+  <div class=" collapse" id="collapseExample<%=i%>">
+    <div class="card details card-body">
+      <div class="container">
+  
+        <div class="row">
+          <div class="col">
+            <h4><%=info.number1%></h4>
+          </div><div class="col">
+            <h5><%=info.number1tag%></h5>
+          </div><div class="col">
+            <a href="<%=info.number1link%>"><%=info.number1link%></a>
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4><%=info.number2%></h4>
+        </div><div class="col">
+          <h5><%=info.number2tag%></h5>
+        
+        </div><div class="col">
+          <a href="<%=info.number1link%>"><%=info.number2link%></a>
+        
+        </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4><%=info.number3%></h4>
+        </div><div class="col">
+          <h5><%=info.number3tag%></h5>
+        </div><div class="col">
+          <a href="<%=info.number1link%>"><%=info.number3link%></a>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4><%=info.number4%></h4>
+        </div><div class="col">
+          <h5><%=info.number4tag%></h5>
+        </div><div class="col">
+          <a href="<%=info.number1link%>"><%=info.number4link%></a>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <h4><%=info.number5%></h4>
+        </div><div class="col-5">
+          <h5><%=info.number5tag%></h5>
+        </div><div class="col-2">
+          <a href="<%=info.number1link%>"><%=info.number5link%></a>
+        
+        </div>
+        </div>
+         </div>
+    </div>
+  </div>
+  <div class="vote">
+  
+    <%=vote[Math.floor(Math.random()*vote.length)]%>
+  
+  </div>
+  <div class="arrow-btns">
+    <div class="up-btn">
+  
+    </div>
+    <button type="button" class="btn btn-primary btn-sm" ><i class="  fa fa-arrow-up fa-2x"></i></button>
+    <button type="button" class="btn btn-primary btn-sm"> <i class="down-btn fa fa-arrow-down fa-2x"></i></button>
+    
+   
+  </div>
+  <hr>
+  
+  </div>
+  
+  </div>
+    <% }) %>
+      <% }) %>
+
+
+ 
+
+   
+
+<%- include('partials/footer') %>
