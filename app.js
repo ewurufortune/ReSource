@@ -30,7 +30,7 @@ app.use(passport.session());
 // mongodb://localhost:27017/resourcesDB
 // mongodb+srv://ewurufortune:pmX0GdJHQumI8jVb@resourcecluster.inplmwx.mongodb.net/resourceDB
 // pmX0GdJHQumI8jVb
-mongoose.connect("mongodb+srv://ewurufortune:pmX0GdJHQumI8jVb@resourcecluster.inplmwx.mongodb.net/resourceDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://fortune:1234@resourcecluster.inplmwx.mongodb.net/resourceDB", {useNewUrlParser: true});
 mongoose.set("useCreateIndex", true);
 
 const roadmapSchema = new mongoose.Schema ({
