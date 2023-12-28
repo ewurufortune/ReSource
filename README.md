@@ -1,8 +1,9 @@
-ReSource - Node.js EJS MongoDB App with Authentication
-Overview
+**ReSource - Node.js EJS MongoDB App with Authentication**
+
+**Overview**
 ReSource is a web application built using Node.js, EJS templating, and MongoDB. It is designed to serve as a resource management tool with user authentication capabilities.
 
-Features
+**Features**
 User Authentication: Secure user authentication system to protect user data and resources.
 Resource Management: Create, edit, and delete resources with ease.
 MongoDB Integration: Utilizes MongoDB as the database for efficient data storage.
